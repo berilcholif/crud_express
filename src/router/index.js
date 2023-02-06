@@ -22,7 +22,13 @@ const routes = [
         path: '/views/edit/:id',
         name: 'views.edit',
         component: () => import( /* webpackChunkName: "post.edit" */ '@/components/views/Edit.vue')
-    }
+    },
+    {
+        path: '/show/:id',
+        name: 'views.read',
+        component: () => import( /* webpackChunkName: "post.edit" */ '@/components/views/read.vue')
+    },
+
 ]
 
 //create router
